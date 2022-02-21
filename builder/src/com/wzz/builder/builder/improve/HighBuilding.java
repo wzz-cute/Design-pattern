@@ -5,19 +5,19 @@ public class HighBuilding extends HouseBuilder {
 	@Override
 	public void buildBasic() {
 		// TODO Auto-generated method stub
-		System.out.println(" ¸ßÂ¥µÄ´òµØ»ù100Ã× ");
+		System.out.println(" é«˜æ¥¼çš„æ‰“åœ°åŸº100ç±³ ");
 	}
 
 	@Override
 	public void buildWalls() {
 		// TODO Auto-generated method stub
-		System.out.println(" ¸ßÂ¥µÄÆöÇ½20cm ");
+		System.out.println(" é«˜æ¥¼çš„ç Œå¢™20cm ");
 	}
 
 	@Override
 	public void roofed() {
 		// TODO Auto-generated method stub
-		System.out.println(" ¸ßÂ¥µÄÍ¸Ã÷Îİ¶¥ ");
+		System.out.println(" é«˜æ¥¼çš„é€æ˜å±‹é¡¶ ");
 	}
 
 }

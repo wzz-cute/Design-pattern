@@ -3,22 +3,22 @@ package com.wzz.builder.builder.improve;
 public class Client {
 	public static void main(String[] args) {
 		
-		//¸ÇÆÕÍ¨·¿×Ó
+		//ç›–æ™®é€šæˆ¿å­
 		CommonHouse commonHouse = new CommonHouse();
-		//×¼±¸´´½¨·¿×ÓµÄÖ¸»ÓÕß
+		//å‡†å¤‡åˆ›å»ºæˆ¿å­çš„æŒ‡æŒ¥è€…
 		HouseDirector houseDirector = new HouseDirector(commonHouse);
 		
-		//Íê³É¸Ç·¿×Ó£¬·µ»Ø²úÆ·(ÆÕÍ¨·¿×Ó)
+		//å®Œæˆç›–æˆ¿å­ï¼Œè¿”å›äº§å“(æ™®é€šæˆ¿å­)
 		House house = houseDirector.constructHouse();
 		
-		//System.out.println("Êä³öÁ÷³Ì");
+		//System.out.println("è¾“å‡ºæµç¨‹");
 		
 		System.out.println("--------------------------");
-		//¸Ç¸ßÂ¥
+		//ç›–é«˜æ¥¼
 		HighBuilding highBuilding = new HighBuilding();
-		//ÖØÖÃ½¨ÔìÕß
+		//é‡ç½®å»ºé€ è€…
 		houseDirector.setHouseBuilder(highBuilding);
-		//Íê³É¸Ç·¿×Ó£¬·µ»Ø²úÆ·(¸ßÂ¥)
+		//å®Œæˆç›–æˆ¿å­ï¼Œè¿”å›äº§å“(é«˜æ¥¼)
 		houseDirector.constructHouse();
 		
 		

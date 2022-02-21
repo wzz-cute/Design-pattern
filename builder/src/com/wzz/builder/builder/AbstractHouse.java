@@ -2,11 +2,11 @@ package com.wzz.builder.builder;
 
 public abstract class AbstractHouse {
 	
-	//´òµØ»ù
+	//æ‰“åœ°åŸº
 	public abstract void buildBasic();
-	//ÆöÇ½
+	//ç Œå¢™
 	public abstract void buildWalls();
-	//·â¶¥
+	//å°é¡¶
 	public abstract void roofed();
 	
 	public void build() {

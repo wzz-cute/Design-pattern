@@ -5,19 +5,19 @@ public class CommonHouse extends HouseBuilder {
 	@Override
 	public void buildBasic() {
 		// TODO Auto-generated method stub
-		System.out.println(" ÆÕÍ¨·¿×Ó´òµØ»ù5Ã× ");
+		System.out.println(" æ™®é€šæˆ¿å­æ‰“åœ°åŸº5ç±³ ");
 	}
 
 	@Override
 	public void buildWalls() {
 		// TODO Auto-generated method stub
-		System.out.println(" ÆÕÍ¨·¿×ÓÆöÇ½10cm ");
+		System.out.println(" æ™®é€šæˆ¿å­ç Œå¢™10cm ");
 	}
 
 	@Override
 	public void roofed() {
 		// TODO Auto-generated method stub
-		System.out.println(" ÆÕÍ¨·¿×ÓÎİ¶¥ ");
+		System.out.println(" æ™®é€šæˆ¿å­å±‹é¡¶ ");
 	}
 
 }

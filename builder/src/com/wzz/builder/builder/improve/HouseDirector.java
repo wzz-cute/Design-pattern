@@ -1,21 +1,21 @@
 package com.wzz.builder.builder.improve;
 
-//Ö¸»ÓÕß£¬ÕâÀïÈ¥Ö¸¶¨ÖÆ×÷Á÷³Ì£¬·µ»Ø²úÆ·
+//æŒ‡æŒ¥è€…ï¼Œè¿™é‡Œå»æŒ‡å®šåˆ¶ä½œæµç¨‹ï¼Œè¿”å›äº§å“
 public class HouseDirector {
 	
 	HouseBuilder houseBuilder = null;
 
-	//¹¹ÔìÆ÷´«Èë houseBuilder
+	//æ„é€ å™¨ä¼ å…¥ houseBuilder
 	public HouseDirector(HouseBuilder houseBuilder) {
 		this.houseBuilder = houseBuilder;
 	}
 
-	//Í¨¹ısetter ´«Èë houseBuilder
+	//é€šè¿‡setter ä¼ å…¥ houseBuilder
 	public void setHouseBuilder(HouseBuilder houseBuilder) {
 		this.houseBuilder = houseBuilder;
 	}
 	
-	//ÈçºÎ´¦Àí½¨Ôì·¿×ÓµÄÁ÷³Ì£¬½»¸øÖ¸»ÓÕß
+	//å¦‚ä½•å¤„ç†å»ºé€ æˆ¿å­çš„æµç¨‹ï¼Œäº¤ç»™æŒ‡æŒ¥è€…
 	public House constructHouse() {
 		houseBuilder.buildBasic();
 		houseBuilder.buildWalls();

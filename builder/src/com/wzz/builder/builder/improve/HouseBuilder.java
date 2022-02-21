@@ -1,17 +1,17 @@
 package com.wzz.builder.builder.improve;
 
 
-// ³éÏóµÄ½¨ÔìÕß
+// æŠ½è±¡çš„å»ºé€ è€…
 public abstract class HouseBuilder {
 
 	protected House house = new House();
 	
-	//½«½¨ÔìµÄÁ÷³ÌĞ´ºÃ, ³éÏóµÄ·½·¨
+	//å°†å»ºé€ çš„æµç¨‹å†™å¥½, æŠ½è±¡çš„æ–¹æ³•
 	public abstract void buildBasic();
 	public abstract void buildWalls();
 	public abstract void roofed();
 	
-	//½¨Ôì·¿×ÓºÃ£¬ ½«²úÆ·(·¿×Ó) ·µ»Ø
+	//å»ºé€ æˆ¿å­å¥½ï¼Œ å°†äº§å“(æˆ¿å­) è¿”å›
 	public House buildHouse() {
 		return house;
 	}
