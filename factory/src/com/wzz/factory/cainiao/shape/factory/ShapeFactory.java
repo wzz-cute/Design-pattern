@@ -22,6 +22,7 @@ public class ShapeFactory {
         return null;
     }
 
+    //根据传入形状的实现类返回
     public Shape getShape(Shape shape){
         return shape;
     }

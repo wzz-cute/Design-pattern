@@ -27,7 +27,7 @@ public class FactoryPatternDemo {
         //调用 Square 的 draw 方法
         shape3.draw();
 
-        //--------------------------------------------------------
+        //----------------------根据传入类型实现画形状----------------------------------
         Shape shape4 = shapeFactory.getShape(new Circle());
         shape4.draw();
     }

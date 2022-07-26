@@ -1,11 +1,12 @@
 package com.wzz.strategy;
 
 import com.wzz.strategy.point.StrategyPoint;
+import com.wzz.strategy.service.StrategyService;
 import com.wzz.strategy.util.StrategyReflex;
 
 public class PlainTest {
     public static void main(String[] args) throws Exception {
-        //原本业务
+//        原本业务
 //        int type = 0;
 //        if (type == 0) { //模拟业务操作
 //            System.out.println("wzz 在做好事");
@@ -18,7 +19,7 @@ public class PlainTest {
 //        }
 
         //策略者模式实现 根据实现类
-//        String type = "0";
+//        String type = "1";
 //        String classPath = StrategyPoint.getClass(type);
 //        StrategyService strategyService = (StrategyService)Class.forName(classPath).newInstance();
 //        strategyService.execute();

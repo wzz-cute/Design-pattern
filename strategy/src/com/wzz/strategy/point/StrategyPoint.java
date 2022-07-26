@@ -6,12 +6,12 @@ public enum StrategyPoint {
 //    DO_ONE("1", "com.wzz.strategy.service.impl.OneServiceImpl"),
 //    DO_TWO("2", "com.wzz.strategy.service.impl.TwoServiceImpl"),
 //    DO_THREE("3", "com.wzz.strategy.service.impl.ThreeServiceImpl"),
-    BASE_PATH("com.wzz.strategy.service.impl.DoNumSome"),
+    BASE_PATH("","com.wzz.strategy.service.impl.DoNumSome"),
     //根据方法进实现
-    DO_ZERO_MOTHOD("0", BASE_PATH.getType(), "doZero"),
-    DO_ONE_MOTHOD("1", BASE_PATH.getType(), "doOne"),
-    DO_TWO_MOTHOD("2", BASE_PATH.getType(), "doTwo"),
-    DO_THREE_MOTHOD("3", BASE_PATH.getType(), "doThree");
+    DO_ZERO_MOTHOD("0", BASE_PATH.getClassPath(), "doZero"),
+    DO_ONE_MOTHOD("1", BASE_PATH.getClassPath(), "doOne"),
+    DO_TWO_MOTHOD("2", BASE_PATH.getClassPath(), "doTwo"),
+    DO_THREE_MOTHOD("3", BASE_PATH.getClassPath(), "doThree");
 
     private String type;
     private String classPath;
@@ -22,8 +22,8 @@ public enum StrategyPoint {
         this.classPath = classPath;
     }
 
-    StrategyPoint(String type) {
-        this.type = type;
+    StrategyPoint(String classPath) {
+        this.classPath = classPath;
     }
 
     StrategyPoint(String type, String classPath, String methodName) {
@@ -32,7 +32,7 @@ public enum StrategyPoint {
         this.methodName = methodName;
     }
 
-    // 普通方法
+    // 根据类型获取class路径
     public static String getClass(String type) {
         for (StrategyPoint s : StrategyPoint.values()) {
             if (s.getType().equals(type)) {

@@ -13,7 +13,7 @@ import java.util.List;
 public class Source {
     private List<Adapter> adapterList = null;
 
-    public void initialization() {
+    public void initialization() { //初始化执行方法  注入适配器实例
         adapterList = new ArrayList<>();
         Adapter adapterA = new A();
         Adapter adapterB = new B();
@@ -24,9 +24,9 @@ public class Source {
         adapterList.add(adapterC);
     }
 
-    public Adapter match(Adapter adapterService) {
+    public Adapter match(Adapter adapterService) { //适配器匹配方法
         for (Adapter adapter : adapterList) {
-            if (adapter.supports(adapterService)) {
+            if (adapter.supports(adapterService)) { //匹配
                 return adapter;
             }
         }
